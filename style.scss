@@ -1,0 +1,46 @@
+$primary-color: #3498db;
+$text-color: #333;
+$font: Arial, sans-serif;
+
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: $font;
+  background: #f4f4f4;
+
+  @include center;
+  height: 100vh;
+}
+
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+
+  h1 {
+    color: $primary-color;
+  }
+
+  p {
+    color: $text-color;
+  }
+
+  button {
+    background: $primary-color;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+
+    &:hover {
+      background: darkblue;
+    }
+  }
+}
