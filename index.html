@@ -1,17 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sv">
-<head>
-  <meta charset="UTF-8">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <div class="card">
-    <h1>Najib Khalili</h1>
-    <p>Fotograf</p>
-    <button>Kontakta mig</button>
-  </div>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-</body>
+    <title>Portfolio</title>
+  </head>
+
+  <body class="bg-light">
+
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+      <div class="card shadow" style="width: 22rem;">
+        
+        <div class="card-body text-center">
+          <h1 class="card-title text-primary">Najib Khalili</h1>
+          <p class="card-text">Fotograf</p>
+
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#kontaktModal">
+            Kontakta mig
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+  
+    <div class="modal fade" id="kontaktModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title">Kontakt</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+
+          <div class="modal-body">
+            <p>Email: najib@gmail.com</p>
+            <p>Telefon: 070-0000000</p>
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Stäng</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
